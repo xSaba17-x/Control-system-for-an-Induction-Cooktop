@@ -1,0 +1,200 @@
+%implements "chartSource" "C"
+%function ChartConfig(block, system) void
+  %createrecord chartConfiguration { ...
+          executeAtInitialization  0 ...
+  }
+  %return chartConfiguration
+%endfunction
+%function ChartDataMap(block, system) void
+  %createrecord ChartDataElements {\
+    NumChartData   26 \
+    ChartDataDefaults {\
+      RecordType   "ChartData"\
+      Dimensions   []\
+      IsTestPoint  0\
+    }\
+    ChartData {\
+      Name         "acceso"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "acceso"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "app"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "app"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "attivo"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "attivo"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "contatore"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "contatore"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "disattivaFornello"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "disattivaFornello"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "evento_spegnimento"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "evento_spegnimento"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "pentola"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "pentola"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "frequenza"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "frequenza"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "accendi_led_anomalia"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "accendi_led_anomalia"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_active_c2_consegnaTest1"\
+      Description  "StateIsActive"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_Gestione_Potenza"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "Fornello_induzione.Cambiamento_Potenza_Fornello.Gestione_Potenza"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_Bottone_Aumento"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "Fornello_induzione.Cambiamento_Potenza_Fornello.Bottone_Aumento"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_Bottone_Diminuzione"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "Fornello_induzione.Cambiamento_Potenza_Fornello.Bottone_Diminuzione"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_Toggling_Led"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "Fornello_induzione.Cambiamento_Potenza_Fornello.Toggling_Led"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_Logica_Accensione_Spegnimento"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "Fornello_induzione.Accensione.Logica_Accensione_Spegnimento"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_Bottone_Accensione"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "Fornello_induzione.Accensione.Bottone_Accensione"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_led_accensione"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "Fornello_induzione.Accensione.led_accensione"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_Logica_Sensore_Pentola"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "Fornello_induzione.Prossimita_Pentola.Logica_Sensore_Pentola"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_Sensore_Prossimita"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "Fornello_induzione.Prossimita_Pentola.Sensore_Prossimita"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_Led_Anomalia"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "Fornello_induzione.Prossimita_Pentola.Led_Anomalia"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "temporalCounter_i1"\
+      Description  "TemporalCounter"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "temporalCounter_i2"\
+      Description  "TemporalCounter"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "temporalCounter_i3"\
+      Description  "TemporalCounter"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "temporalCounter_i4"\
+      Description  "TemporalCounter"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "temporalCounter_i5"\
+      Description  "TemporalCounter"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "temporalCounter_i6"\
+      Description  "TemporalCounter"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  ""\
+    }\
+  }
+  %return ChartDataElements
+%endfunction
